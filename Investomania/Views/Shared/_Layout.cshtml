@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/Arabic/css")
+    @Styles.Render("~/style/css")
+    @Styles.Render("~/reaponsive/css")
+    @Styles.Render("~/font/css")
+    @Styles.Render("~/awesome/css")
+    @*@Styles.Render("~/carousel/css")*@
+    @Scripts.Render("~/jquery-1.12.4/js")
+    @Scripts.Render("~/unobtrusive-ajax/js")
+
+</head>
+<body>
+    <div class="row headerLayout">
+        <div class="padd-0-30">
+            <div class="pull-left">
+               
+            </div>
+            <div class="pull-right">
+                <div class="headerInformation">
+                    <span>0100121212</span><span><i class="fas fa-phone"></i></span>
+
+                </div>
+                <div class="headerInformation">
+                    <span>ayat</span>   <span><i class="fas fa-globe"></i></span>
+
+                </div>
+
+                <div class="headerInformation">
+                    <span> @DateTime.Now.Day - @DateTime.Now.Month - @DateTime.Now.Year</span><span><i class="far fa-clock"></i></span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Investomania", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Economie", "Index", "Economie")</li>
+                    <li>@Html.ActionLink("News", "Index", "News")</li>
+                    <li>@Html.ActionLink("Ourservies", "Index", "Ourservies")</li>
+                    <li>@Html.ActionLink("Education", "Index", "Education")</li>
+                </ul>
+                @*<ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                    <li><i class="fas fa-user"></i></li>
+                </ul>*@
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown language-dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+
+                            <span class="lang" id="">Arabic</span>
+
+                        </a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#" onclick="">
+                                        العربيه
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="">
+                                        English
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+    </div>
+        @RenderBody()
+    @* =================== loading ==================== *@
+    @*<div class="loading">
+        <div class="loadingcircle">
+            <div class="circle circle--1">&nbsp;</div>
+            <div class="circle circle--2">&nbsp;</div>
+            <div class="circle circle--3">&nbsp;</div>
+            <div class="circle circle--4">&nbsp;</div>
+        </div>
+    </div>*@
+    @* =================== loading ==================== *@
+        <br />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Investominia</p>
+        </footer>
+<script>
+ 
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 60) {
+            $(".navbar-fixed-top").animate({
+                top: '0px'
+            }, 50);
+            $(".navbar-fixed-top").addClass("bgnavbar");
+        } else {
+            $(".navbar-fixed-top").animate({
+                top: '50px',
+                
+            }, 50);
+            
+            $(".navbar-fixed-top").removeClass("bgnavbar")
+        }
+    });
+</script>
+    @*@Scripts.Render("~/carousel/js")*@
+    
+    @Scripts.Render("~/animate/js")
+    @Scripts.Render("~/bootstrap/js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

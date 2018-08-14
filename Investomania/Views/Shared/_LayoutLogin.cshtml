@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/English/css")
+    @Styles.Render("~/style/css")
+    @Styles.Render("~/reaponsive/css")
+    @Styles.Render("~/font/css")
+    @Styles.Render("~/awesome/css")
+    <link href="~/SiteStyle/FrontEnd/Css/main.css" rel="stylesheet" />
+    @*@Styles.Render("~/carousel/css")*@
+    @Scripts.Render("~/jquery-1.12.4/js")
+    @Scripts.Render("~/unobtrusive-ajax/js")
+    
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <script>
+  @Scripts.Render("~/animate/js")
+  @Scripts.Render("~/bootstrap/js")
+  @RenderSection("scripts", required: false)
+    </script>
+</body>
+</html>
