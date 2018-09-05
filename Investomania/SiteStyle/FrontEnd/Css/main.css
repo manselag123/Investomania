@@ -301,6 +301,9 @@ top: 7px;
 .loginIcon.focus-input100::after {
       content: '\f007';
 }
+.EmailIcon.focus-input100::after {
+      content: '\f1fa';
+}
 .passwordIcon.focus-input100::after {
       content: '\f023';
 }
