@@ -3,3 +3,6 @@
 ################################################################################
 
 /Investomania/_bin_deployableAssemblies/amd64/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/Investomania/v15/Server/sqlite3/db.lock
