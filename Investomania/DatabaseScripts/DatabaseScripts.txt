@@ -1,0 +1,9 @@
+Create Database if not exists Investomania
+CREATE TABLE [dbo].[New]
+(
+	[Id] INT NOT NULL PRIMARY KEY  identity(1,1),
+	newsTitle nvarchar(Max) ,
+	newsContent nvarchar(max),
+	creationDate datetime
+
+)

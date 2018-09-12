@@ -13,7 +13,9 @@
     @*@Styles.Render("~/carousel/css")*@
     @Scripts.Render("~/jquery-1.12.4/js")
     @Scripts.Render("~/unobtrusive-ajax/js")
+    @Scripts.Render("~/bundeles/ckeditor")
 
+    
 </head>
 <body>
     <div class="row headerLayout">
@@ -92,17 +94,7 @@
                 </ul>
             </div>
     </div>
-        @RenderBody()
-    @* =================== loading ==================== *@
-    @*<div class="loading">
-        <div class="loadingcircle">
-            <div class="circle circle--1">&nbsp;</div>
-            <div class="circle circle--2">&nbsp;</div>
-            <div class="circle circle--3">&nbsp;</div>
-            <div class="circle circle--4">&nbsp;</div>
-        </div>
-    </div>*@
-    @* =================== loading ==================== *@
+        @RenderBody() 
         <br />
         <footer>
             <p>&copy; @DateTime.Now.Year - Investominia</p>

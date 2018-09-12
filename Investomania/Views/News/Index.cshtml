@@ -1,4 +1,7 @@
-﻿@{
+﻿@model IEnumerable<Investomania.DAL.New>
+
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <section class="breadcrumb Imgbreadcrumb">
@@ -15,209 +18,29 @@
 </div>
 <section class="row">
     <div class="col-md-9">
+         @if (Model != null)
+         {
+       foreach (var item in Model)
+        {
         <div class="col-md-12">
             <div id="" class="row artsec">
-                <div class="col-md-3 col-sm-4">
-                    <div class="entry-image">
-                        <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                    </div>
-                </div>
+              
                 <div class="col-md-9 col-sm-8">
                     <div class="entry-details">
-                        <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
+                        <h4 class="entry-title"><a href="#" rel="">@item.newsTitle</a></h4>
                         <div class="entry-content">
-                            <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                        </div>
-                        <div class="service-more">
-                            <a href="#" class="btn-blue">Read more</a>
-                        </div>
+                            @item.newsContent
+                                   </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-12">
-            <div id="" class="row artsec">
-                <div class="col-md-3 col-sm-4">
-                    <div class="entry-image">
-                        <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                    </div>
-                </div>
-                <div class="col-md-9 col-sm-8">
-                    <div class="entry-details">
-                        <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                        <div class="entry-content">
-                            <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                        </div>
-                        <div class="service-more">
-                            <a class="btn-blue">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div id="" class="row artsec">
-                <div class="col-md-3 col-sm-4">
-                    <div class="entry-image">
-                        <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                    </div>
-                </div>
-                <div class="col-md-9 col-sm-8">
-                    <div class="entry-details">
-                        <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                        <div class="entry-content">
-                            <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                        </div>
-                        <div class="service-more">
-                            <a class="btn-blue">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div id="" class="row artsec">
-                <div class="col-md-3 col-sm-4">
-                    <div class="entry-image">
-                        <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                    </div>
-                </div>
-                <div class="col-md-9 col-sm-8">
-                    <div class="entry-details">
-                        <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                        <div class="entry-content">
-                            <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                        </div>
-                        <div class="service-more">
-                            <a class="btn-blue">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div id="" class="row artsec">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="entry-image">
-                            <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8">
-                        <div class="entry-details">
-                            <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                            <div class="entry-content">
-                                <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                            </div>
-                            <div class="service-more">
-                                <a class="btn-blue">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div id="" class="row artsec">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="entry-image">
-                            <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8">
-                        <div class="entry-details">
-                            <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                            <div class="entry-content">
-                                <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                            </div>
-                            <div class="service-more">
-                                <a class="btn-blue">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div id="" class="row artsec">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="entry-image">
-                            <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8">
-                        <div class="entry-details">
-                            <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                            <div class="entry-content">
-                                <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                            </div>
-                            <div class="service-more">
-                                <a class="btn-blue">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div id="" class="row artsec">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="entry-image">
-                            <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8">
-                        <div class="entry-details">
-                            <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                            <div class="entry-content">
-                                <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                            </div>
-                            <div class="service-more">
-                                <a class="btn-blue">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div id="" class="row artsec">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="entry-image">
-                            <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8">
-                        <div class="entry-details">
-                            <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                            <div class="entry-content">
-                                <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                            </div>
-                            <div class="service-more">
-                                <a class="btn-blue">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div id="" class="row artsec">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="entry-image">
-                            <img src="http://forex.themehipster.com/demo1/wp-content/uploads/2016/08/7.jpg?e44c25" />
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8">
-                        <div class="entry-details">
-                            <h4 class="entry-title"><a href="#" rel="">Banking services</a></h4>
-                            <div class="entry-content">
-                                <p>We offer a range of private banking services tailored to your needs. Forex or lending? Our experts guide you to find the right solution worldwide.</p>
-                            </div>
-                            <div class="service-more">
-                                <a class="btn-blue">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        } 
+         }
     </div>
     <div class="col-md-3 catygory">
-         <h1>@Html.ActionLink(" + ","Create","News")</h1>  
+        <h1>@Html.ActionLink(" + ", "Create", "News")</h1>
         <ul>
             <li> <a>cat1</a> </li>
             <li> <a>cat2</a> </li>
@@ -227,7 +50,7 @@
         </ul>
     </div>
 </section>
- 
+
 <div class="modal" tabindex="-1" role="dialog" id="modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
